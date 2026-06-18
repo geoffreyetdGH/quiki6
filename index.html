@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiki6 Desktop</title>
+  <style>
+    body { 
+      font-family: system-ui, sans-serif; 
+      text-align: center; 
+      padding: 60px 20px; 
+      background: #0a0a0a; 
+      color: white; 
+    }
+    h1 { color: #00ff9f; font-size: 3rem; margin-bottom: 10px; }
+    p { font-size: 1.3rem; color: #ccc; }
+    button { 
+      background: #00ff9f; color: black; padding: 18px 50px; font-size: 1.5rem; 
+      border: none; border-radius: 9999px; cursor: pointer; margin: 40px 0 20px;
+      font-weight: bold;
+    }
+    button:hover { transform: scale(1.08); }
+    #status { margin-top: 30px; font-size: 1.2rem; min-height: 80px; color: #00ff9f; }
+  </style>
+</head>
+<body>
+  <h1>Quiki6</h1>
+  <p>Six quick keystrokes.<br>Every AI chat — saved forever.</p>
+  <button id="captureBtn">Capture This Chat Now</button>
+  <div id="status"></div>
+
+  <!-- Important: JavaScript loader -->
+   <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
